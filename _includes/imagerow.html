@@ -5,7 +5,11 @@
 
         <li class="wp-caption alignleft">
             <a title="{{ image.name }}" href="{{ image.url }}">
-                <img src="{{ image.url }}" alt="{{ image.name }}"{% if image.width %} width="{{ image.width }}"{% endif %} height="{{ image.height }}">
+            {% if image.width %}
+                <img src="{{ image.url }}" alt="{{ image.name }}" width="{{ image.width }}" height="{{ image.height }}">
+            {% else %}
+                <img src="{{ image.url }}" alt="{{ image.name }}" height="{{ image.height }}">
+            {% endif %} 
             </a>
             {% if image.caption %}
             <p class="wp-caption-text">{{ image.name }}</p>
