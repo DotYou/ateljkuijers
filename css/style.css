@@ -1,0 +1,802 @@
+html, body{
+	display: block;
+	height: 100%;
+	background-color: #f0f0f0;
+	background-image: url('../img/linenlight.jpg');
+	color: #2b2b2b;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica;
+	font-size: 12px;
+}
+ol, ul {
+	list-style: none;
+}
+/* Tables */
+table {/* tables still need 'cellspacing="0"' in the markup */
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+a img {
+	border: 0;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+a{
+	color: #404040;
+}
+a:hover{
+	color: #797979;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+/* Headings */
+h1,h2,h3,h4,h5,h6 {
+	clear: both;
+}
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.625em;
+}
+
+/* Text elements */
+p {
+	margin-bottom: 1.625em;
+}
+ul, ol {
+	margin: 0 0 1.625em 2.5em;
+}
+ul {
+	list-style: square;
+}
+ol {
+	list-style-type: decimal;
+}
+ol ol {
+	list-style: upper-alpha;
+}
+ol ol ol {
+	list-style: lower-roman;
+}
+ol ol ol ol {
+	list-style: lower-alpha;
+}
+ul ul, ol ol, ul ol, ol ul {
+	margin-bottom: 0;
+}
+dl {
+	margin: 0 1.625em;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin-bottom: 1.625em;
+}
+strong {
+	font-weight: bold;
+}
+cite, em, i {
+	font-style: italic;
+}
+blockquote {
+	font-family: Georgia, "Bitstream Charter", serif;
+	font-style: italic;
+	font-weight: normal;
+	margin: 0 3em;
+}
+blockquote em, blockquote i, blockquote cite {
+	font-style: normal;
+}
+blockquote cite {
+	color: #666;
+	font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+pre {
+	background: #f4f4f4;
+	font: 13px "Courier 10 Pitch", Courier, monospace;
+	line-height: 1.5;
+	margin-bottom: 1.625em;
+	overflow: auto;
+	padding: 0.75em 1.625em;
+}
+code, kbd {
+	font: 13px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+abbr, acronym, dfn {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+address {
+	display: block;
+	margin: 0 0 1.625em;
+}
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+sup,
+sub {
+	font-size: 10px;
+	height: 0;
+	line-height: 1;
+	position: relative;
+	vertical-align: baseline;
+}
+sup {
+	bottom: 1ex;
+}
+sub {
+	top: .5ex;
+}
+
+/* 
+----------------------------
+| Wordpress Style : Images |
+----------------------------
+*/
+.imagerowcontainer {
+    float: right;
+    position: relative;
+    left: -50%;
+    text-align: left;
+}
+ul.imagerow {
+    list-style: none;
+    position: relative;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+}
+.clearer {
+    height: 1px;
+    overflow: hidden;
+    margin-top: -1px;
+    clear: both;
+}
+
+.entry-content img,
+.comment-content img,
+.widget img {
+	max-width: 97.5%; /* Fluid images for posts, comments, and widgets */
+}
+img[class*="align"],
+img[class*="wp-image-"],
+img[class*="attachment-"] {
+	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+img.size-full,
+img.size-large {
+	max-width: 97.5%;
+	width: auto; /* Prevent stretching of full-size and large-size images with height and width attributes in IE8 */
+	height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+}
+.entry-content img.wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+img.alignleft,
+img.alignright,
+img.aligncenter {
+	margin-bottom: 1.625em;
+}
+p img,
+.wp-caption {
+	margin-top: 0.4em;
+}
+.wp-caption {
+	background: transparent;
+	max-width: 96%;
+	padding: 9px;
+	float: left;
+	border: 0px;
+}
+.wp-caption.alignright {
+    float: right;
+}
+.wp-caption img {
+	display: block;
+	margin: 0 auto;
+}
+.wp-caption .wp-caption-text,
+.gallery-caption {
+	color: #555;
+	font-family: Georgia, serif;
+	font-size: 12px;
+}
+.wp-caption .wp-caption-text {
+	margin: 0;
+	padding: 5px;
+	position: relative;
+	text-align: center;
+}
+
+/* Make sure embeds and iframes fit their containers */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+/*
+--------------------------------
+| Theme AtelJKuijers : Lay-Out |
+--------------------------------
+*/
+.cssClear{
+	overflow: auto;
+	width: 100%;
+}
+
+#container,#header{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#header{
+	border-top: 4px solid black;
+	background: url('../img/banner.png') no-repeat center -20px;
+	opacity: 0.7;
+	padding: 10px 0 10px 0;
+}
+
+#middle, .headerMain{
+	width: 980px;
+	margin: 0 auto;
+	opacity: 1;
+}
+
+.headerMain{
+	background: url('../img/logo.png') no-repeat 10px top;
+	height: 95px;
+}
+
+#header ul{
+	list-style-type: none;
+	float: right;
+}
+
+#header div.menu,
+#header .menu-main-container {
+	padding-top: 70px;
+	font-family: 'Quattrocento Sans', sans-serif, arial;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#header .headerMain a{
+	color: #000000;
+}
+
+#header .menu li{
+	float: right;
+	padding: 2px 10px;
+}
+
+#header .menu li.current_page_item a{
+	color: #454545;
+	text-decoration: none;
+	cursor: default;
+}
+
+.headerBottom{
+	width: 100%;
+	height: 0px;
+	margin-top: 0px;
+}
+
+#middle #subtitle{
+	font-size: 25px;
+	color: #757575;
+	height: 35px;
+	margin: 0 10px;
+	padding-top: 10px;
+	border-top: 1px solid black;
+}
+
+#subtitle span{
+    font-size: 18px;
+    letter-spacing: 9px;
+    line-height: 0px;
+    display: block;
+}
+
+#middle #middlecontent{
+	margin: 0 10px;
+	overflow: hidden;
+	width: 960px;
+}
+
+#middle #middlecontent .contentleft{
+	width: 780px;
+	float: left;
+}
+
+#middle #middlecontent .contentright{
+	width: 180px;
+	float: right;
+}
+
+#middle #middlecontent .contentright ul{
+	list-style: none outside none;
+	margin: 0 0 50px 15px;
+}
+
+#middle #middlecontent .contentright ul ul{
+	list-style: disc;
+	margin: 0 0 30px 15px;
+}
+
+#homeGallery,
+#homeContent{
+	width: 960px;
+	margin: 0 auto;
+	background-color: rgba(155, 155, 155, 0.1);
+}
+
+#homeGallery{
+	width: 940px;
+	height: 490px;
+	padding: 15px 15px 5px 5px;
+}
+
+#homeContent{
+	margin-top: 30px;
+	overflow: hidden;
+}
+
+#homeContent dl{
+    margin: 0;
+}
+
+#homeGalleryContent{
+	width: 370px;
+	padding: 5px;
+	float: left;
+}
+
+#sliderbox{
+	position: relative;
+    width:550px;
+    height: 470px;
+    margin:0;
+    padding: 5px;
+	float: right;
+}
+
+#slider-wrapper{
+	position: relative;
+    width:550px;
+    height: 450px;
+    margin:0;
+	overflow: hidden;
+    -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    box-shadow: 0px 1px 5px 0px #4a4a4a;
+}
+
+#footer{
+	width: 960px;
+	margin: 0 auto;
+	padding: 40px 0 20px 0;
+}
+
+/*
+----------------------------
+| Wordpress Style : Custom |
+----------------------------
+*/
+.singlePageContent{
+	background-color: rgba(180, 180, 180, 0.1);
+	margin-bottom: 30px;
+}
+
+article{
+	margin-bottom: 50px;
+	padding: 10px;
+	background-color: rgba(180, 180, 180, 0.2);
+	width: 760px;
+	overflow: hidden;
+}
+
+#homeGallery article{
+    width: 350px;	
+	padding: 10px;
+	background-color: transparent;
+}
+
+#homeContent article{
+	margin-bottom: 0px;
+    width: 920px;
+	padding: 10px 20px;
+	background-color: transparent;
+	overflow: auto;
+}
+
+article ul{
+	margin: 10px 0;
+	padding: 0 0 0 30px;
+}
+
+article div.entry-content{
+	font-size: 14px;
+}
+
+article div.entry-content p,
+article div.entry-content #FSContact1{
+	margin: 10px 5px;
+	/*clear: both;*/
+}
+
+article header{
+	border-bottom: 1px solid #A5A5A5;
+	padding-bottom: 5px;
+}
+
+article header .entry-meta{
+	color: #757575;
+}
+
+article footer{
+	padding-top: 5px;
+}
+
+article header .entry-meta,
+article header .entry-meta a,
+article footer,
+article footer a{
+	color: #555555;
+}
+
+/*============================*/
+/*=== Custom Slider Styles ===*/
+/*============================*/
+
+#slider{
+	position:relative;
+    width:550px; /* Change this to your images width */
+    height: 450px; /* Change this to your images height */
+    margin-left:0px;
+	background:url('../img/loading.gif') no-repeat 50% 50%;
+	padding: 0;
+	margin: 0;
+}
+#slider img{
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+#slider a{
+	border:0;
+	display:block;
+}
+
+.nivoSlider {
+	position:relative;
+	background:#fff url('../img/loading.gif') no-repeat 50% 50%;
+    -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    box-shadow: 0px 1px 5px 0px #4a4a4a;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none;
+}
+.nivoSlider a {
+	border:0;
+	display:block;
+}
+
+.nivo-controlNav {
+	position:absolute;
+	left:50%;
+	bottom:-5px;
+    margin-left:-40px; /* Tweak this to center bullets */
+}
+.nivo-controlNav a {
+	display:block;
+	width:22px;
+	height:22px;
+	background:url('../img/bullets.png') no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-right:3px;
+	float:left;
+}
+.nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+
+.nivo-directionNav a {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url('../img/arrows.png') no-repeat;
+	text-indent:-9999px;
+	border:0;
+}
+a.nivo-nextNav {
+	background-position:-30px 0;
+	right:15px;
+}
+a.nivo-prevNav {
+	left:15px;
+}
+
+.nivo-caption {
+    font-family: Helvetica, Arial, sans-serif;
+}
+.nivo-caption a {
+    color:#fff;
+    border-bottom:1px dotted #fff;
+}
+.nivo-caption a:hover {
+    color:#fff;
+}
+
+/*=======================================*/
+/*=== Custom Gallerific Slider Styles ===*/
+/*=======================================*/
+
+div.content {
+	/* The display of content is enabled using jQuery so that the slideshow content won't display unless javascript is enabled. */
+	display: none;
+	float: right;
+	width: 550px; 
+}
+div.content a, div.navigation a {
+	text-decoration: none;
+	color: #777;
+}
+div.content a:focus, div.content a:hover, div.content a:active {
+	text-decoration: underline;
+}
+div.controls {
+	margin-top: 5px;
+	height: 23px;
+}
+div.controls a {
+	padding: 5px;
+}
+div.ss-controls {
+	float: left;
+}
+div.nav-controls {
+	float: right;
+}
+div.slideshow-container {
+	position: relative;
+	clear: both;
+	height: 502px; /* This should be set to be at least the height of the largest image in the slideshow */
+}
+div.loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url('../img/loading.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 550px;
+	height: 502px; /* This should be set to be at least the height of the largest image in the slideshow */
+}
+div.slideshow {
+
+}
+div.slideshow span.image-wrapper {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+div.slideshow a.advance-link {
+	display: block;
+	width: 550px;
+	height: 502px; /* This should be set to be at least the height of the largest image in the slideshow */
+	line-height: 502px; /* This should be set to be at least the height of the largest image in the slideshow */
+	text-align: center;
+}
+div.slideshow a.advance-link:hover, div.slideshow a.advance-link:active, div.slideshow a.advance-link:visited {
+	text-decoration: none;
+}
+div.slideshow img {
+	vertical-align: middle;
+	border: 1px solid #ccc;
+}
+div.download {
+	float: right;
+}
+div.caption-container {
+	position: relative;
+	clear: left;
+	height: 120px;
+}
+span.image-caption {
+	display: block;
+	position: absolute;
+	width: 550px;
+	top: 0;
+	left: 0;
+}
+div.caption {
+	padding: 12px;
+}
+div.image-title {
+	font-weight: bold;
+	font-size: 1.4em;
+}
+div.image-props,
+div.image-desc {
+	line-height: 1.3em;
+	padding-top: 12px;
+}
+div.navigation {
+	/* The navigation style is set using jQuery so that the javascript specific styles won't be applied unless javascript is enabled. */
+}
+ul.thumbs {
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+ul.thumbs li {
+	float: left;
+	padding: 0;
+	margin: 5px 10px 5px 0;
+	list-style: none;
+	/*width: 81px;
+	height: 81px;*/
+}
+a.thumb {
+	padding: 2px;
+	display: block;
+	border: 1px solid #ccc;
+	/*float: left;*/
+}
+ul.thumbs li.selected a.thumb {
+	background: #000;
+}
+a.thumb:focus {
+	outline: none;
+}
+ul.thumbs img {
+	border: none;
+	display: block;
+}
+div.pagination {
+	clear: both;
+}
+div.navigation div.top {
+	margin-bottom: 12px;
+	height: 11px;
+}
+div.navigation div.bottom {
+	margin-top: 12px;
+}
+div.pagination a, div.pagination span.current, div.pagination span.ellipsis {
+	display: block;
+	float: left;
+	margin-right: 2px;
+	padding: 4px 7px 2px 7px;
+	border: 1px solid #ccc;
+}
+div.pagination a:hover {
+	background-color: #eee;
+	text-decoration: none;
+}
+div.pagination span.current {
+	font-weight: bold;
+	background-color: #000;
+	border-color: #000;
+	color: #fff;
+}
+div.pagination span.ellipsis {
+	border: none;
+	padding: 5px 0 3px 2px;
+}
+
+/* The Nivo Slider styles */
+.nivoSlider {
+	position:relative;
+}
+.nivoSlider img {
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	border:0;
+	padding:0;
+	margin:0;
+	z-index:6;
+	display:none;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice {
+	display:block;
+	position:absolute;
+	z-index:5;
+	height:100%;
+}
+.nivo-box {
+	display:block;
+	position:absolute;
+	z-index:5;
+}
+/* Caption styles */
+.nivo-caption {
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	background:#000;
+	color:#fff;
+	opacity:0.8; /* Overridden by captionOpacity setting */
+	width:100%;
+	z-index:8;
+}
+.nivo-caption p {
+	padding:5px;
+	margin:0;
+}
+.nivo-caption a {
+	display:inline !important;
+}
+.nivo-html-caption {
+    display:none;
+}
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a {
+	position:absolute;
+	top:45%;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-prevNav {
+	left:0px;
+}
+.nivo-nextNav {
+	right:0px;
+}
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav a {
+	position:relative;
+	z-index:9;
+	cursor:pointer;
+}
+.nivo-controlNav a.active {
+	font-weight:bold;
+}

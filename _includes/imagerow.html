@@ -1,0 +1,19 @@
+{% if include.images.size >= 1 %}
+<div class="imagerowcontainer">
+    <ul class="imagerow">
+        {% for image in include.images %}
+
+        <li class="wp-caption alignleft">
+            <a title="{{ image.name }}" href="{{ image.url }}">
+                <img src="{{ image.url }}" alt="{{ image.name }}"{% if image.width %} width="{{ image.width }}"{% endif %} height="{{ image.height }}">
+            </a>
+            {% if image.caption %}
+            <p class="wp-caption-text">{{ image.name }}</p>
+            {% endif %}
+        </li>
+
+        {% endfor %}
+    </ul>
+</div>
+<div class="clearer"></div>
+{% endif %}
