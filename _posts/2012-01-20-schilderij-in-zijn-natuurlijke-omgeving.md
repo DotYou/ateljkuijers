@@ -67,7 +67,9 @@ Vervolgens gaat het schilderen natuurlijk in enkele stadia. Ik vind de reacties 
 <div class="imagerowcontainer">
     <ul class="imagerow">
         {% for image in page.images.row2 %}
-
+            {% if image.caption %}
+            <p class="wp-caption-text">{{ image.name }}</p>
+            {% endif %}
         <li class="wp-caption alignleft">
             <a title="{{ image.name }}" href="{{ image.url }}">
             {% if image.width %}
@@ -89,7 +91,9 @@ Vervolgens gaat het schilderen natuurlijk in enkele stadia. Ik vind de reacties 
 
 
 {% for component in site.components %}
-{{ component.content | capitalize }}
+    {% if component.name == "imagerow-caption" %}
+        {{ component.content | capitalize }}
+    {% endif %}
 {% endfor %}
 
 je moeder!
