@@ -86,13 +86,6 @@ Vervolgens gaat het schilderen natuurlijk in enkele stadia. Ik vind de reacties 
 </div>
 <div class="clearer"></div>
 
-{{ site.components.imagerow_image.content }}
-
-
-lala
-
-
-lala
 
 
 {% for component in site.components %}
