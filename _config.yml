@@ -26,7 +26,8 @@ destination: ./_site
 layouts:     ./_layouts
 data_source: ./_data
 collections:
-- image_collection
+  components:
+    output: false
 
 # Handling Reading
 exclude:
