@@ -42,20 +42,15 @@ Het begint met praten met de opdrachtgever. Vaak heeft die al bepaalde idee&euml
 <div class="imagerowcontainer">
     <ul class="imagerow">
         {% for image in page.images.row1 %}
-
-        <li class="wp-caption alignleft">
-            <a title="{{ image.name }}" href="{{ image.url }}">
-            {% if image.width %}
-                <img src="{{ image.url }}" alt="{{ image.name }}" width="{{ image.width }}" height="{{ image.height }}">
-            {% else %}
-                <img src="{{ image.url }}" alt="{{ image.name }}" height="{{ image.height }}">
-            {% endif %} 
-            </a>
             {% if image.caption %}
-            <p class="wp-caption-text">{{ image.name }}</p>
+                {% for component in site.components %} {% if component.name == "imagerow-caption" %}
+                    {{ component.content | replace:'%%url%%',image.url | replace:'%%name%%',image.name | replace:'%%height%%',image.height | replace:'%%caption%%',image.caption }}
+                {% endif %} {% endfor %}
+            {% else %}
+                {% for component in site.components %} {% if component.name == "imagerow-image" %}
+                    {{ component.content | replace:'%%url%%',image.url | replace:'%%name%%',image.name | replace:'%%height%%',image.height }}
+                {% endif %} {% endfor %}
             {% endif %}
-        </li>
-
         {% endfor %}
     </ul>
 </div>
@@ -86,4 +81,19 @@ Daarna bracht ik echter de nuances aan met paars en kwam de begroeiing erbij. Da
 
 Wat ik het leukst vind aan het schilderen in opdracht is om te zien hoe een schilderij echt &lsquo;thuishoort&rsquo; in de ruimte. Het is vanaf het begin afgestemd op een bepaalde plek, zowel qua maat als qua kleur en ontwerp. Zoals op de laatste foto te zien is maakt het schilderij de kamer echt af. Dat noem ik nu &lsquo;een schilderij in zijn natuurlijke omgeving&rsquo;.
 
-<!--|%%|%7B%25%20include%20imagerow.html%20images%3Dpage.images.row3%20%25%7D|%%|-->
+<div class="imagerowcontainer">
+    <ul class="imagerow">
+        {% for image in page.images.row3 %}
+            {% if image.caption %}
+                {% for component in site.components %} {% if component.name == "imagerow-caption" %}
+                    {{ component.content | replace:'%%url%%',image.url | replace:'%%name%%',image.name | replace:'%%height%%',image.height | replace:'%%caption%%',image.caption }}
+                {% endif %} {% endfor %}
+            {% else %}
+                {% for component in site.components %} {% if component.name == "imagerow-image" %}
+                    {{ component.content | replace:'%%url%%',image.url | replace:'%%name%%',image.name | replace:'%%height%%',image.height }}
+                {% endif %} {% endfor %}
+            {% endif %}
+        {% endfor %}
+    </ul>
+</div>
+<div class="clearer"></div>
