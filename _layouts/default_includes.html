@@ -1,23 +1,40 @@
-<!DOCTYPE html>
-<html lang="nl">
+---
+layout: default
+---
 
-{% include head.html %}
+{% assign imagerow = false %}
+{% assign include_out = false %}
 
-<body class="home page page-id-14 page-template-default singular">
-<div id="container">
-    <div id="header">
-        {% include nav.html %}
-    </div>
-    <div id="middle">
-        <div id="subtitle"><span>Kunst die inspireert - AtelJKuijers</span></div>
-        <div id="middlecontent">
-            {{ content }}
+{% if page.images.size >= 1 %}
+{% capture include_out %}
+    {% for imagerow in page.images %}
+    
+        {% if forloop.first == false %}|{% endif %}
+        <div class="imagerowcontainer">
+            <ul class="imagerow">
+                {% for image in imagerow %}
+        
+                <li class="wp-caption alignleft">
+                    <a title="{{ image.name }}" href="{{ image.url }}">
+                    {% if image.width %}
+                        <img src="{{ image.url }}" alt="{{ image.name }}" width="{{ image.width }}" height="{{ image.height }}">
+                    {% else %}
+                        <img src="{{ image.url }}" alt="{{ image.name }}" height="{{ image.height }}">
+                    {% endif %} 
+                    </a>
+                    {% if image.caption %}
+                    <p class="wp-caption-text">{{ image.name }}</p>
+                    {% endif %}
+                </li>
+        
+                {% endfor %}
+            </ul>
         </div>
-    </div>
+        <div class="clearer"></div>
+        
+    {% endfor %}
+{% endcapture %}
+{% assign imagerow = include_out | split: "|" %}
+{% endif %}
 
-{% include footer.html %}
-
-</div>
-</body>
-
-</html>
+{{ content }}
