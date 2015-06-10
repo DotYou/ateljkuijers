@@ -1,3 +1,4 @@
+{{ page.title }}
 {% for imagerow in page.images %}
     <div class="imagerowcontainer">
         <ul class="imagerow">
