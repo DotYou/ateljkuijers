@@ -31,7 +31,7 @@ images:
       caption: false
 ---
 
-{{ test_var }}
+{{ 'foofoo' | replace:'foo','bar' | replace:'bar','baz' }}
 
 De meeste van mijn schilderijen maak ik omdat iets me inspireert. Een kleur, een beeld, een foto of een gevoel. Dan begin ik met schilderen en er ontstaat gaandeweg een schilderij wat uiteindelijk veel verder gaat dan het idee waardoor het ontstond.
 
@@ -39,7 +39,27 @@ Soms gaat het echter anders. Dan krijg ik een opdracht van iemand om een schilde
 
 Het begint met praten met de opdrachtgever. Vaak heeft die al bepaalde idee&euml;n over een onderwerp, kleur, maat van het schilderij etc. Verder kom ik kijken naar de ruimte en maak ik enkele foto&rsquo;s van de kleuren en structuren die daar gebruikt zijn. Dan ontstaat er vaak al een soort grove schets in mijn hoofd van wat mooi zou passen. Dit overleg ik met de opdrachtgever en in dit gesprek ontstaat een eerste idee. Hier enkele foto&rsquo;s van een ruimte waarvoor ik een schilderij heb gemaakt. De opdracht bij dit schilderij was o.a. om de kleuren (warm) grijs, donkerpaars en bladgroen te gebruiken en iets met water te schilderen.
 
-{{ imagerow[0] }}
+<div class="imagerowcontainer">
+    <ul class="imagerow">
+        {% for image in images %}
+
+        <li class="wp-caption alignleft">
+            <a title="{{ image.name }}" href="{{ image.url }}">
+            {% if image.width %}
+                <img src="{{ image.url }}" alt="{{ image.name }}" width="{{ image.width }}" height="{{ image.height }}">
+            {% else %}
+                <img src="{{ image.url }}" alt="{{ image.name }}" height="{{ image.height }}">
+            {% endif %} 
+            </a>
+            {% if image.caption %}
+            <p class="wp-caption-text">{{ image.name }}</p>
+            {% endif %}
+        </li>
+
+        {% endfor %}
+    </ul>
+</div>
+<div class="clearer"></div>
 
 Vervolgens gaat het schilderen natuurlijk in enkele stadia. Ik vind de reacties van mensen die zo&rsquo;n &lsquo;work in progress&rsquo; zien altijd grappig. In mijn hoofd zie ik het eindresultaat al, maar anderen zien alleen waar ik op dat moment ben. Als voorbeeld hier een foto van het schilderij als de eerste paar lagen erop zitten. Het is alleen nog grijs en lijkt wat somber.
 
