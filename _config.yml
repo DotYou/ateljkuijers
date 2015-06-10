@@ -25,7 +25,8 @@ destination: ./_site
 #plugins:     ./_plugins
 layouts:     ./_layouts
 data_source: ./_data
-collections: null
+collections:
+- image_collection
 
 # Handling Reading
 exclude:
