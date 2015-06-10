@@ -24,9 +24,6 @@ images:
       url: "http://lh5.ggpht.com/-EO5VjFiGy6Y/Txmwjzl0g7I/AAAAAAAABYM/-BFPyV6OCsY/DSCF2841.JPG"
       height: 393
 ---
-
-{{ 'foofoo' | replace:'foo','bar' | replace:'bar','baz' }}
-
 De meeste van mijn schilderijen maak ik omdat iets me inspireert. Een kleur, een beeld, een foto of een gevoel. Dan begin ik met schilderen en er ontstaat gaandeweg een schilderij wat uiteindelijk veel verder gaat dan het idee waardoor het ontstond.
 
 Soms gaat het echter anders. Dan krijg ik een opdracht van iemand om een schilderij te maken voor een bepaalde ruimte. In dat geval ontstaat het schilderij door een heel ander proces. Hieronder wil ik jullie een stukje laten meekijken hoe zo&rsquo;n schilderij in opdracht ontstaat.
