@@ -68,21 +68,14 @@ Vervolgens gaat het schilderen natuurlijk in enkele stadia. Ik vind de reacties 
     <ul class="imagerow">
         {% for image in page.images.row2 %}
             {% if image.caption %}
-            <p class="wp-caption-text">{{ image.name }}</p>
-            {% endif %}
-        <li class="wp-caption alignleft">
-            <a title="{{ image.name }}" href="{{ image.url }}">
-            {% if image.width %}
-                <img src="{{ image.url }}" alt="{{ image.name }}" width="{{ image.width }}" height="{{ image.height }}">
+                {% for component in site.components %} {% if component.name == "imagerow-caption" %}
+                    {{ component.content | replace:'%%url%%',image.url | replace:'%%name%%',image.name | replace:'%%height%%',image.height | replace:'%%caption%%',image.caption }}
+                {% endif %} {% endfor %}
             {% else %}
-                <img src="{{ image.url }}" alt="{{ image.name }}" height="{{ image.height }}">
-            {% endif %} 
-            </a>
-            {% if image.caption %}
-            <p class="wp-caption-text">{{ image.name }}</p>
+                {% for component in site.components %} {% if component.name == "imagerow-image" %}
+                    {{ component.content | replace:'%%url%%',image.url | replace:'%%name%%',image.name | replace:'%%height%%',image.height }}
+                {% endif %} {% endfor %}
             {% endif %}
-        </li>
-
         {% endfor %}
     </ul>
 </div>
@@ -92,7 +85,7 @@ Vervolgens gaat het schilderen natuurlijk in enkele stadia. Ik vind de reacties 
 
 {% for component in site.components %}
     {% if component.name == "imagerow-caption" %}
-        {{ component.content | capitalize }}
+        {{ component.content }}
     {% endif %}
 {% endfor %}
 
