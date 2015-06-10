@@ -42,15 +42,9 @@ Het begint met praten met de opdrachtgever. Vaak heeft die al bepaalde idee&euml
 <div class="imagerowcontainer">
     <ul class="imagerow">
         {% for image in page.images.row1 %}
-            {% if image.caption %}
-                {% for component in site.components %} {% if component.name == "imagerow-caption" %}
-                    {{ component.content | replace:'%%url%%',image.url | replace:'%%name%%',image.name | replace:'%%height%%',image.height | replace:'%%caption%%',image.caption }}
-                {% endif %} {% endfor %}
-            {% else %}
-                {% for component in site.components %} {% if component.name == "imagerow-image" %}
-                    {{ component.content | replace:'%%url%%',image.url | replace:'%%name%%',image.name | replace:'%%height%%',image.height }}
-                {% endif %} {% endfor %}
-            {% endif %}
+            {% for component in site.components %} {% if component.name == "imagerow-caption" %}
+                {{ component.content | replace:'%%url%%',image.url | replace:'%%name%%',image.name | replace:'%%height%%',image.height | replace:'%%caption%%',image.caption }}
+            {% endif %} {% endfor %}
         {% endfor %}
     </ul>
 </div>
@@ -62,15 +56,9 @@ Vervolgens gaat het schilderen natuurlijk in enkele stadia. Ik vind de reacties 
 <div class="imagerowcontainer">
     <ul class="imagerow">
         {% for image in page.images.row2 %}
-            {% if image.caption %}
-                {% for component in site.components %} {% if component.name == "imagerow-caption" %}
-                    {{ component.content | replace:'%%url%%',image.url | replace:'%%name%%',image.name | replace:'%%height%%',image.height | replace:'%%caption%%',image.caption }}
-                {% endif %} {% endfor %}
-            {% else %}
-                {% for component in site.components %} {% if component.name == "imagerow-image" %}
-                    {{ component.content | replace:'%%url%%',image.url | replace:'%%name%%',image.name | replace:'%%height%%',image.height }}
-                {% endif %} {% endfor %}
-            {% endif %}
+            {% for component in site.components %} {% if component.name == "imagerow-caption" %}
+                {{ component.content | replace:'%%url%%',image.url | replace:'%%name%%',image.name | replace:'%%height%%',image.height | replace:'%%caption%%',image.caption }}
+            {% endif %} {% endfor %}
         {% endfor %}
     </ul>
 </div>
@@ -84,15 +72,9 @@ Wat ik het leukst vind aan het schilderen in opdracht is om te zien hoe een schi
 <div class="imagerowcontainer">
     <ul class="imagerow">
         {% for image in page.images.row3 %}
-            {% if image.caption %}
-                {% for component in site.components %} {% if component.name == "imagerow-caption" %}
-                    {{ component.content | replace:'%%url%%',image.url | replace:'%%name%%',image.name | replace:'%%height%%',image.height | replace:'%%caption%%',image.caption }}
-                {% endif %} {% endfor %}
-            {% else %}
-                {% for component in site.components %} {% if component.name == "imagerow-image" %}
-                    {{ component.content | replace:'%%url%%',image.url | replace:'%%name%%',image.name | replace:'%%height%%',image.height }}
-                {% endif %} {% endfor %}
-            {% endif %}
+            {% for component in site.components %} {% if component.name == "imagerow-image" %}
+                {{ component.content | replace:'%%url%%',image.url | replace:'%%name%%',image.name | replace:'%%height%%',image.height }}
+            {% endif %} {% endfor %}
         {% endfor %}
     </ul>
 </div>
