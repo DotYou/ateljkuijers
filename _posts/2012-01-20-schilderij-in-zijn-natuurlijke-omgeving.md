@@ -87,12 +87,23 @@ Vervolgens gaat het schilderen natuurlijk in enkele stadia. Ik vind de reacties 
 <div class="clearer"></div>
 
 {{ site.components.imagerow_image.content }}
-<br>
-<br>
-<br>
+
+
+lala
+
+
+lala
+
+
 {% for component in site.components %}
 {{ component.content | capitalize }}
 {% endfor %}
+
+je moeder!
+
+
+<div class="clearer"></div>
+
 
 Daarna bracht ik echter de nuances aan met paars en kwam de begroeiing erbij. Daardoor kwam er leven en diepte in dit schilderij. Het eindproduct oogt heel anders dan de vorige foto, hoewel daarop al bijna het hele plaatje op doek stond. Het is toch prachtig om te zien hoeveel kleur dan kan doen.
 
