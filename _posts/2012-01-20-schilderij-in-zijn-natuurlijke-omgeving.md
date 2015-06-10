@@ -41,7 +41,7 @@ Het begint met praten met de opdrachtgever. Vaak heeft die al bepaalde idee&euml
 
 <div class="imagerowcontainer">
     <ul class="imagerow">
-        {% for image in page.images %}
+        {% for image in page.images.row1 %}
 
         <li class="wp-caption alignleft">
             <a title="{{ image.name }}" href="{{ image.url }}">
@@ -66,7 +66,7 @@ Vervolgens gaat het schilderen natuurlijk in enkele stadia. Ik vind de reacties 
 
 <div class="imagerowcontainer">
     <ul class="imagerow">
-        {% for image in images.row1 %}
+        {% for image in page.images.row2 %}
 
         <li class="wp-caption alignleft">
             <a title="{{ image.name }}" href="{{ image.url }}">
