@@ -1,5 +1,6 @@
 ---
 title: "Imagerow image"
+name: imagerow-image
 type: imagerow
 ---
 <li class="wp-caption alignleft">
