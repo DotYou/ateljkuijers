@@ -63,6 +63,33 @@ Het begint met praten met de opdrachtgever. Vaak heeft die al bepaalde idee&euml
 
 Vervolgens gaat het schilderen natuurlijk in enkele stadia. Ik vind de reacties van mensen die zo&rsquo;n &lsquo;work in progress&rsquo; zien altijd grappig. In mijn hoofd zie ik het eindresultaat al, maar anderen zien alleen waar ik op dat moment ben. Als voorbeeld hier een foto van het schilderij als de eerste paar lagen erop zitten. Het is alleen nog grijs en lijkt wat somber.
 
+
+<div class="imagerowcontainer">
+    <ul class="imagerow">
+        {% for image in images %}
+
+        <li class="wp-caption alignleft">
+            <a title="{{ image.name }}" href="{{ image.url }}">
+            {% if image.width %}
+                <img src="{{ image.url }}" alt="{{ image.name }}" width="{{ image.width }}" height="{{ image.height }}">
+            {% else %}
+                <img src="{{ image.url }}" alt="{{ image.name }}" height="{{ image.height }}">
+            {% endif %} 
+            </a>
+            {% if image.caption %}
+            <p class="wp-caption-text">{{ image.name }}</p>
+            {% endif %}
+        </li>
+
+        {% endfor %}
+    </ul>
+</div>
+<div class="clearer"></div>
+
+{{ site.components[0].content }}
+{% for component in site.components %}
+{{ component.content | capitalize }}
+{% endfor %}
 <!--|%%|%7B%25%20include%20imagerow.html%20images%3Dpage.images.row2%20%25%7D|%%|-->
 
 Daarna bracht ik echter de nuances aan met paars en kwam de begroeiing erbij. Daardoor kwam er leven en diepte in dit schilderij. Het eindproduct oogt heel anders dan de vorige foto, hoewel daarop al bijna het hele plaatje op doek stond. Het is toch prachtig om te zien hoeveel kleur dan kan doen.
