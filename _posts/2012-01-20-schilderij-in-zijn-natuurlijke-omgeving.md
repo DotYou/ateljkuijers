@@ -41,7 +41,7 @@ Het begint met praten met de opdrachtgever. Vaak heeft die al bepaalde idee&euml
 
 <div class="imagerowcontainer">
     <ul class="imagerow">
-        {% for image in images %}
+        {% for image in page.images %}
 
         <li class="wp-caption alignleft">
             <a title="{{ image.name }}" href="{{ image.url }}">
