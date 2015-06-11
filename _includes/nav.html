@@ -33,7 +33,7 @@
 
 <!-- http://stackoverflow.com/questions/8340170/jekyll-automatically-highlight-current-tab-in-menu-bar -->
 {% endcomment %}
-{% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
+{% capture location %}{{ page.url | replace:'index.html','' | remove_first:'/' | split:'/' | first }}{% endcapture %}
 {{ page.url }}
 --{{ location }}--
 ::{{ '//' | replace:'/','' }}::
