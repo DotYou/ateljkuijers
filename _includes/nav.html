@@ -42,7 +42,7 @@
             <li><a href="{{ site.baseurl }}/">Updates</a></li>
             <li><a href="{{ site.baseurl }}/gallery/">Galerij</a></li>
             <li class="current_page_item"><a href="{{ site.baseurl }}/">Home</a></li>
-        {% for category in site categories reversed %}
+        {% for category in site.categories reversed %}
             <li><a href="{{ site.baseurl }}/{{category | downcase }}/">{{category}}</a></li>
         {% endfor %}
         </ul>
