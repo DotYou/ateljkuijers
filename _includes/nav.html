@@ -39,7 +39,7 @@
         <ul id="menu-main" class="menu cssClear">
         {% for nav in site.data.navigation reversed %}
             {% capture nav_location %}{{ nav.href | replace:'/','' }}{% endcapture %}
-            <li><a {% if location == nav_location %}class="current_page_item" {% endif %} href="{{ site.baseurl }}{{ nav.href }}/">{{ nav.title }}</a></li>
+            <li><a {% if location == nav_location %}class="current_page_item" {% endif %} href="{{ site.baseurl }}{{ nav.href }}">{{ nav.title }}</a></li>
         {% endfor %}
         </ul>
     </nav>
