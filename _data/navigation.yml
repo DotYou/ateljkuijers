@@ -1,0 +1,24 @@
+- title: "Home"
+  href: "/"
+ 
+- title: "Gallerij"
+  href: "/gallery/"
+#  subcategories:
+#    - subtitle: "Learning topic 1"
+#      subhref: "/learn1/"
+#    - subtitle: "Learning topic 2"
+#      subhref: "/learn2/"
+
+- title: "Updates"
+  href: "/updates/"
+ 
+- title: "Projecten"
+  href: "/projects/"
+ 
+ 
+- title: "Muurschilderingen"
+  href: "/murals/"
+ 
+ 
+- title: "Contact"
+  href: "/contact/"
