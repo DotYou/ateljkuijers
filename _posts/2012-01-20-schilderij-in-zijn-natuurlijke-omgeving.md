@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Schilderij in zijn natuurlijke omgeving
-menu: updates
+menu_item: updates
 images:
   row1:
     - name: Voorstudie foto 1
