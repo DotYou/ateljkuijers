@@ -42,7 +42,7 @@
         <ul id="menu-main" class="menu cssClear">
         {% for nav in site.data.navigation reversed %}
             {% capture nav_location %}{{ nav.href | replace:'/','' }}{% endcapture %}
-            {% if location == nav_location %}
+            {% if location == nav_location || page.type == nav_location %}
                 <li class="current_page_item"><a href="{{ site.baseurl }}{{ nav.href }}">{{ nav.title }}</a></li>
             {% else %}
                 <li><a href="{{ site.baseurl }}{{ nav.href }}">{{ nav.title }}</a></li>
