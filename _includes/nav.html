@@ -33,7 +33,7 @@
 
 <!-- http://stackoverflow.com/questions/8340170/jekyll-automatically-highlight-current-tab-in-menu-bar -->
 {% endcomment %}
-{% capture location %}{{ page.url | replace:'index.html','' }}{% endcapture %}
+{% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}
 {{ page.url }}
 --{{ location }}--
 ::{{ '//' | replace:'/','' }}::
@@ -42,7 +42,7 @@
         <ul id="menu-main" class="menu cssClear">
         {% for nav in site.data.navigation reversed %}
             {% capture nav_location %}{{ nav.href | replace:'/','' }}{% endcapture %}
-            {% if location == nav.href %}
+            {% if location == nav_location %}
                 <li class="current_page_item"><a href="{{ site.baseurl }}{{ nav.href }}">{{ nav.title }}</a></li>
             {% else %}
                 <li><a href="{{ site.baseurl }}{{ nav.href }}">{{ nav.title }}</a></li>
