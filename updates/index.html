@@ -2,7 +2,7 @@
 layout: category_posts
 ---
 
-{% for post in site.categories['updates'] %}
+{% for post in site.categories['updates'] limit:3 %}
     <article class="post type-post status-publish format-standard hentry category-updates">
         <header class="entry-header">
             <h1 class="entry-title"><a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a></h1>
@@ -15,5 +15,16 @@ layout: category_posts
         </div>
         <footer class="entry-meta">
         </footer>
+    </article>
+{% endfor %}
+
+{% for post in site.categories['updates'] offset:3 %}
+    <article class="post type-post status-publish format-standard hentry category-updates">
+        <header class="entry-header">
+            <h1 class="entry-title"><a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a></h1>
+            <div class="entry-meta">
+                <span class="sep">Posted on </span><time class="entry-date" datetime="{{ page.date | date: '%FT%X+01:00'}}">{{ post.date | date: '%d-%m-%Y'}}</time>
+            </div>
+        </header>
     </article>
 {% endfor %}
