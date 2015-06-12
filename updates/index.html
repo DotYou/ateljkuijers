@@ -1,7 +1,19 @@
 ---
-layout: default
+layout: category_posts
 ---
 
 {% for post in site.categories['updates'] %}
-    <li>{{ post.title }}</li>
+    <article class="post type-post status-publish format-standard hentry category-updates">
+        <header class="entry-header">
+            <h1 class="entry-title">{{ post.title }}</h1>
+            <div class="entry-meta">
+                <span class="sep">Posted on </span><time class="entry-date" datetime="{{ page.date | date: '%FT%X+01:00'}}">{{ post.date | date: '%d-%m-%Y'}}</time>
+            </div>
+        </header>
+        <div class="entry-content">
+            {{ post.content | markdownify }}
+        </div>
+        <footer class="entry-meta">
+        </footer>
+    </article>
 {% endfor %}
