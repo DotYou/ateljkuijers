@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Schilderij in zijn natuurlijke omgeving
+title: Ontwikkeling van een schilderij
 menu_item: updates
 category: updates
 images:
@@ -24,10 +24,6 @@ images:
     - name: "Zoveel grijstinten..."
       url: "http://lh5.ggpht.com/-uAN4ZulkcLs/TwiayTeTNJI/AAAAAAAABLE/Zt80kp9z9PM/s400/Foto1038.jpg"
       height: 173
-  row3:
-    - name: Schilderij in natuurlijke omgeving
-      url: "http://lh5.ggpht.com/-EO5VjFiGy6Y/Txmwjzl0g7I/AAAAAAAABYM/-BFPyV6OCsY/DSCF2841.JPG"
-      height: 393
 ---
 Soms heb ik inspiratie en staat binnen de kortste keren een prachtig schilderij op doek.
 Dan maak ik daarna nog wel wat wijzigingen, maar dat is meer de afwerking van het geheel.
