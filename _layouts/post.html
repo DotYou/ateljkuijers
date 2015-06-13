@@ -22,26 +22,6 @@ layout: default
     </div>
 </div>
 
-
-{% capture location %}{{ page.url | replace:'index.html','' | remove_first:'/' | split:'/' | first }}{% endcapture %}
-<div class="headerMain">
-    <nav class="menu-main-container">
-        <ul id="menu-main" class="menu cssClear">
-        {% for nav in site.data.navigation reversed %}
-            {% capture nav_location %}{{ nav.href | replace:'/','' }}{% endcapture %}
-            {% if location == page.category_page %}
-                <li class="current_page_item"><a href="{{ site.baseurl }}{{ nav.href }}">{{ nav.title }}</a></li>
-            {% elsif page.menu_item == nav_location %}
-                <li class="current_page_item"><a href="{{ site.baseurl }}{{ nav.href }}">{{ nav.title }}</a></li>
-            {% else %}
-                <li><a href="{{ site.baseurl }}{{ nav.href }}">{{ nav.title }}</a></li>
-            {% endif %}
-        {% endfor %}
-        </ul>
-    </nav>
-</div>
-<div class="headerBottom"></div>
-
 <div class="contentright">
     <div id="sidebar" role="complementary" name="sebastets">
         <ul role="navigation">
