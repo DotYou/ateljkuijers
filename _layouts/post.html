@@ -38,33 +38,18 @@ layout: default
                 </ul>
             </li>
             <li class="lastnav">
-                <h2>Laatst gepost</h2>
+                <h2>Lees ook</h2>
                 <ul>
-                {% for post in site.posts limit: 5 %}
-                {% if page.url != post.url %}
-                    {% capture month %}{{ post.date | date: '%m%Y' }}{% endcapture %}
-                    {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
-                    {% if month != nmonth %}
-                        {% assign m = page.date | date: "%-m" %}
-                        {% capture date_month_nl %}{% case m %}
-                          {% when '1' %}januari
-                          {% when '2' %}februari
-                          {% when '3' %}maart
-                          {% when '4' %}april
-                          {% when '5' %}mei
-                          {% when '6' %}juni
-                          {% when '7' %}juli
-                          {% when '8' %}augustus
-                          {% when '9' %}september
-                          {% when '10' %}oktober
-                          {% when '11' %}november
-                          {% when '12' %}december
-                        {% endcase %}
-                        {% endcapture %}
-                    <li class="title-header"><h3>{{ date_month_nl }} {{ post.date | date: '%Y' }}</h3></li>
-                    {% endif %}
+                {% assign count = 0 %}
+                {% for post in site.posts %}
+                
+                {% if post.category != page.category_page %}
+                    {% assign count = count + 1 %}
+                    {% if count <= 5 %}
                     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                    {% endif %}
                 {% endif %}
+                
                 {% endfor %}
                 </ul>
             </li>
