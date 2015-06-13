@@ -22,11 +22,12 @@ layout: default
             <li class="lastnav">
                 <h2>Lees ook...</h2>
                 <ul>
-                {% assign count = 0 %}
+                {% assign count = '' %}
                 {% for post in site.posts %}
                 {% if post.category != page.category_page %}
-                    {% assign count = count + 1 %}
-                    {% if count <= 5 %}
+                    {% capture count %}{{ count | append:forloop.index | append:',' }}{% endcapture %}
+                    {% capture count_array %}{{ count | remove_last:',' | split:','}}{% endcapture %}
+                    {% if count_array.size <= 5 %}
                     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
                     {% endif %}
                 {% endif %}
