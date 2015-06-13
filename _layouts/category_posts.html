@@ -25,7 +25,7 @@ layout: default
                 {% assign count = 0 %}
                 {% for post in site.posts %}
                 
-                {% if post.category == page.category_page %}
+                {% if post.category != page.category_page %}
                     {% assign count = count + 1 %}
                     {% if count <= 5 %}
                     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
