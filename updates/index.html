@@ -1,8 +1,9 @@
 ---
 layout: category_posts
+category_page: updates
 ---
 
-{% for post in site.categories['updates'] limit:3 %}
+{% for post in site.categories[page.category_page] limit:3 %}
     <article class="post type-post status-publish format-standard hentry category-updates">
         <header class="entry-header">
             <h1 class="entry-title"><a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a></h1>
@@ -18,7 +19,7 @@ layout: category_posts
     </article>
 {% endfor %}
 
-{% for post in site.categories['updates'] offset:3 %}
+{% for post in site.categories[page.category_page] offset:3 %}
     <article class="post type-post status-publish format-standard hentry category-updates">
         <header class="entry-header">
             <h1 class="entry-title"><a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a></h1>
