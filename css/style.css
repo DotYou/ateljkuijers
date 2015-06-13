@@ -354,6 +354,15 @@ object {
 	margin: 0 0 30px 15px;
 }
 
+#middle #middlecontent .contentright ul ul li.title-header{
+	list-style: none;
+	margin-left: -10px;
+}
+
+#middle #middlecontent .contentright ul ul li.title-header h3{
+	margin: 10px 0;
+}
+
 #homeGallery,
 #homeContent{
 	width: 960px;
