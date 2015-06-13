@@ -10,7 +10,7 @@ layout: default
     <div id="sidebar" role="complementary" name="sebastets">
         <ul role="navigation">
             <li class="catnav">
-                <h2>{{ page.category_page }}</h2>
+                <h2>{{ page.category_page | capitalize }}</h2>
                 <ul>
                 {% for post in site.categories[page.category_page] %}
                 <li class="post type-post status-publish format-standard hentry category-updates">
