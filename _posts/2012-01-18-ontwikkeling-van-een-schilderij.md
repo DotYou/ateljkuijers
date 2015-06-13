@@ -89,12 +89,12 @@ In die periode heb ik enkele ontzettend mooie foto’s gemaakt … wat kan de lu
 <div class="clearer"></div>
 
 {% for image in page.images.row3 %}
-    <div class="wp-caption alignleft" style="width:125px">
-        <a title="{ image.name }}" href="{ image.url }}">
-            <img src="{{ image.url }}" alt="{ image.name }}" height="{ image.height }}">
-        </a>
-        <p class="wp-caption-text">{ image.caption }}</p>
-    </div>
+<div class="wp-caption alignleft" style="width:125px">
+    <a title="{ image.name }}" href="{ image.url }}">
+        <img src="{{ image.url }}" alt="{ image.name }}" height="{ image.height }}">
+    </a>
+    <p class="wp-caption-text">{ image.caption }}</p>
+</div>
 {% endfor %}
 
 In elk geval, uiteindelijk had ik de perfecte blauwe lucht (die loopt trouwens over van heel licht naar diepblauw – was me ook nooit eerder opgevallen!) met de perfecte, enigszins stormachtige wolkpartij.
