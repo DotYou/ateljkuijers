@@ -1,11 +1,11 @@
 ---
-title: "Imagerow caption image"
-name: imagerow-caption
-type: imagerow
+title: "Image caption"
+name: image-caption
+type: image
 ---
-<li class="wp-caption alignleft">
+<div class="wp-caption alignleft" style="width:%%div_width%%">
     <a title="%%name%%" href="%%url%%">
         <img src="%%url%%" alt="%%name%%" height="%%height%%">
     </a>
     <p class="wp-caption-text">%%caption%%</p>
-</li>
+</div>
