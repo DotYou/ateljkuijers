@@ -46,7 +46,7 @@ layout: default
                     {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
                     {% if month != nmonth %}
                         {% assign m = page.date | date: "%-m" %}
-                        {% capture nav_location %}{% case m %}
+                        {% capture date_month_nl %}{% case m %}
                           {% when '1' %}januari
                           {% when '2' %}februari
                           {% when '3' %}maart
@@ -61,8 +61,6 @@ layout: default
                           {% when '12' %}december
                         {% endcase %}
                         {% endcapture %}
-                        {{ page.date | date: "%Y" }}
-
                     <li class="title-header"><h3>{{ date_month_nl }} {{ post.date | date: '%Y' }}</h3></li>
                     {% endif %}
                     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
