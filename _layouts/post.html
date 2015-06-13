@@ -37,15 +37,17 @@ layout: default
                 {% endfor %}
                 </ul>
             </li>
-            <li><h2>Archief</h2>
+            <li>
+                <h2>Laatst gepost</h2>
                 <ul>
-                    <li><a href="http://www.ateljkuijers.nl/2013/01/" title="januari 2013">januari 2013</a></li>
-                    <li><a href="http://www.ateljkuijers.nl/2012/12/" title="december 2012">december 2012</a></li>
-                    <li><a href="http://www.ateljkuijers.nl/2012/08/" title="augustus 2012">augustus 2012</a></li>
-                    <li><a href="http://www.ateljkuijers.nl/2012/06/" title="juni 2012">juni 2012</a></li>
-                    <li><a href="http://www.ateljkuijers.nl/2012/05/" title="mei 2012">mei 2012</a></li>
-                    <li><a href="http://www.ateljkuijers.nl/2012/02/" title="februari 2012">februari 2012</a></li>
-                    <li><a href="http://www.ateljkuijers.nl/2012/01/" title="januari 2012">januari 2012</a></li>
+                {% for post in site.posts limit: 5 %}
+                    {% capture month %}{{ post.date | date: '%m%Y' }}{% endcapture %}
+                    {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
+                    {% if month != nmonth %}
+                        <li><h3>{{ post.date | date: '%B %Y' }}</h3></li>
+                    {% endif %}
+                    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
                 </ul>
             </li>
         </ul>
