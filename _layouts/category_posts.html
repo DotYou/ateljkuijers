@@ -5,25 +5,20 @@ layout: default
 <div class="contentleft">
     {{ content }}
 </div>
+
 <div class="contentright">
     <div id="sidebar" role="complementary" name="sebastets">
-        <ul>
-            <li>
-                <form role="search" method="get" id="searchform" action="http://www.ateljkuijers.nl/">
-                    <div><label class="screen-reader-text" for="s">Zoeken naar:</label>
-                        <input type="text" value="" name="s" id="s">
-                        <input type="submit" id="searchsubmit" value="Zoeken">
-                    </div>
-                </form> </li>
-        </ul>
         <ul role="navigation">
             <li class="catnav">
-                <h2>Updates</h2><ul>
-                <li id="post-67" class="post-67 post type-post status-publish format-standard hentry category-updates">
-                    <a href="http://www.ateljkuijers.nl/2012/01/ontwikkeling-van-een-schilderij/" title="Permalink naar Ontwikkeling van een schilderij" rel="bookmark">
-                        Ontwikkeling van een schilderij </a>
+                <h2>{{ page.category_page }}</h2>
+                <ul>
+                {% for post in site.categories[page.category_page] %}
+                <li class="post type-post status-publish format-standard hentry category-updates">
+                    <a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
                 </li>
-            </ul> </li>
+                {% endfor %}
+                </ul>
+            </li>
             <li><h2>Archief</h2>
                 <ul>
                     <li><a href="http://www.ateljkuijers.nl/2013/01/" title="januari 2013">januari 2013</a></li>
