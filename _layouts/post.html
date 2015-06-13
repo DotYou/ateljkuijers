@@ -37,14 +37,14 @@ layout: default
                 {% endfor %}
                 </ul>
             </li>
-            <li>
+            <li class="lastnav">
                 <h2>Laatst gepost</h2>
                 <ul>
                 {% for post in site.posts limit: 5 %}
                     {% capture month %}{{ post.date | date: '%m%Y' }}{% endcapture %}
                     {% capture nmonth %}{{ post.next.date | date: '%m%Y' }}{% endcapture %}
                     {% if month != nmonth %}
-                        <li><h3>{{ post.date | date: '%B %Y' }}</h3></li>
+                    <li class="title-header"><h3>{{ post.date | date: '%B %Y' }}</h3></li>
                     {% endif %}
                     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
                 {% endfor %}
