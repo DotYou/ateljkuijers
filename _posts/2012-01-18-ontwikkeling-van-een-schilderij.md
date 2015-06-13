@@ -30,6 +30,19 @@ images:
       url: "http://lh5.ggpht.com/-uAN4ZulkcLs/TwiayTeTNJI/AAAAAAAABLE/Zt80kp9z9PM/s400/Foto1038.jpg"
       height: 187
       caption: "Zoveel grijstinten..."
+  row3:
+    - name: "'Duif' eerste versie"
+      url: "http://lh3.ggpht.com/-BnbQGdpha_E/TxawDwABBNI/AAAAAAAABXI/1kT9tH4sa2w/s400/Foto1025.jpg"
+      height: 465
+      caption: "'Duif' eerste versie"
+    - name: "'Duif' halverwege"
+      url: "http://lh3.ggpht.com/-30B6DWmM4x8/TxawrwSdQVI/AAAAAAAABUg/Y21wDeAN8RQ/s400/Foto1055.jpg"
+      height: 465
+      caption: "'Duif' halverwege"
+    - name: "'Duif' uiteindelijke versie"
+      url: "http://lh3.ggpht.com/-pUXYMmGarno/Twia7UQxOLI/AAAAAAAABU0/h97FbI3BoDA/s400/Foto1075.jpg"
+      height: 465
+      caption: "'Duif' uiteindelijke versie"
 ---
 Soms heb ik inspiratie en staat binnen de kortste keren een prachtig schilderij op doek.
 Dan maak ik daarna nog wel wat wijzigingen, maar dat is meer de afwerking van het geheel.
@@ -74,6 +87,12 @@ In die periode heb ik enkele ontzettend mooie foto’s gemaakt … wat kan de lu
     </ul>
 </div>
 <div class="clearer"></div>
+
+{% for image in page.images.row3 %}
+    {% for component in site.components %} {% if component.name == "imagerow-caption" %}
+        {{ component.content | replace:'%%url%%',image.url | replace:'%%name%%',image.name | replace:'%%height%%',image.height | replace:'%%caption%%',image.caption }}
+    {% endif %} {% endfor %}
+{% endfor %}
 
 In elk geval, uiteindelijk had ik de perfecte blauwe lucht (die loopt trouwens over van heel licht naar diepblauw – was me ook nooit eerder opgevallen!) met de perfecte, enigszins stormachtige wolkpartij.
 Toen bleek dat er een misverstand was met de opdrachtgever.
