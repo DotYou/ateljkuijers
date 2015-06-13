@@ -7,23 +7,29 @@ images:
   row1:
     - name: "'Captivating'"
       url: "http://lh3.ggpht.com/-4DBJ7rfM3MU/TwyevgrgbrI/AAAAAAAABQI/5I7G-utQW2A/2012-01-08%25252014.24.58.jpg"
-      height: 240
+      height: 260
+      caption: "'Captivating'"
     - name: "'Happiness' versie 1"
       url: "http://lh3.ggpht.com/-D7syVBcvslM/TwibKfb1_-I/AAAAAAAABKI/z6LXiTGfxKk/s400/Foto1109.jpg"
-      height: 240
+      height: 260
+      caption: "'Happiness' versie 1"
     - name: "'Happiness' uiteindelijke versie"
       url: "http://lh4.ggpht.com/-hGZHIlnTtyk/Txa0BFhhrDI/AAAAAAAABXM/S7mMcK7cp6E/s400/2012-01-18%25252012.56.00.jpg"
-      height: 240
+      height: 260
+      caption: "'Happiness' uiteindelijke versie"
   row2:
     - name: "Stormwolken en blauwe lucht"
       url: "http://lh6.ggpht.com/-218BGdslbws/TwiatLaVC8I/AAAAAAAABLA/1BOifi1-qpM/s400/Foto1033.jpg"
-      height: 173
+      height: 187
+      caption: "Stormwolken en blauwe lucht"
     - name: "Wolken belicht door de laagstaande zon"
       url: "http://lh3.ggpht.com/-OAA0dybvV2Y/TwiXmfhVsgI/AAAAAAAAA7M/ZbxXDkbK7Dg/s400/100_2749.JPG"
-      height: 173
+      height: 187
+      caption: "Wolken belicht door de laagstaande zon"
     - name: "Zoveel grijstinten..."
       url: "http://lh5.ggpht.com/-uAN4ZulkcLs/TwiayTeTNJI/AAAAAAAABLE/Zt80kp9z9PM/s400/Foto1038.jpg"
-      height: 173
+      height: 187
+      caption: "Zoveel grijstinten..."
 ---
 Soms heb ik inspiratie en staat binnen de kortste keren een prachtig schilderij op doek.
 Dan maak ik daarna nog wel wat wijzigingen, maar dat is meer de afwerking van het geheel.
