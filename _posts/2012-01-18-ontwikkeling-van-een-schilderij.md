@@ -88,12 +88,6 @@ In die periode heb ik enkele ontzettend mooie foto’s gemaakt … wat kan de lu
 </div>
 <div class="clearer"></div>
 
-{% for image in page.images.row3 %}
-    {% for component in site.components %} {% if component.name == "image-caption" %}
-        {{ component.content | replace:'%%url%%',image.url | replace:'%%name%%',image.name | replace:'%%height%%',image.height | replace:'%%caption%%',image.caption | replace:'%%div_width%%','125' }}
-    {% endif %} {% endfor %}
-{% endfor %}
-
 In elk geval, uiteindelijk had ik de perfecte blauwe lucht (die loopt trouwens over van heel licht naar diepblauw – was me ook nooit eerder opgevallen!) met de perfecte, enigszins stormachtige wolkpartij.
 Toen bleek dat er een misverstand was met de opdrachtgever.
 Die wilde geen blauwe lucht met wolken, maar een helemaal grijze lucht!
