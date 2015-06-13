@@ -32,15 +32,6 @@ layout: default
                     {% endif %}
                 {% endif %}
                 
-                {% if post.category != page.category_page %}
-                    {% capture count %}{{ count | append:forloop.index | append:',' }}{% endcapture %}
-                    {% capture count_array %}{{ count | remove_last:',' | split:','}}{% endcapture %}
-                    <li>{{ count }} :: {{ count_array.size }}</li>
-                    {% if count_array.size <= 5 %}
-                    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-                    {% endif %}
-                {% endif %}
-                
                 {% endfor %}
                 </ul>
             </li>
