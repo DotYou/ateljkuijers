@@ -35,10 +35,12 @@ Het begint met praten met de opdrachtgever. Vaak heeft die al bepaalde idee&euml
 <div class="imagerowcontainer">
     <ul class="imagerow">
         {% for image in page.images.row1 %}
-            {% for component in site.components %} {% if component.name == "imagerow-caption" %}
-                {{ component.content | replace:'%%url%%',image.url | replace:'%%name%%',image.name | replace:'%%height%%',image.height | replace:'%%caption%%',image.caption }}
-            {% endif %} {% endfor %}
-        {% endfor %}
+            <div class="wp-caption alignleft">
+                <a title="{{ image.name }}" href="{{ image.url }}">
+                    <img src="{{ image.url }}" alt="{{ image.name }}" height="{{ image.height }}">
+                </a>
+                <p class="wp-caption-text">{{ image.caption }}</p>
+            </div>
     </ul>
 </div>
 <div class="clearer"></div>
