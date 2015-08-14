@@ -41,6 +41,7 @@ Het begint met praten met de opdrachtgever. Vaak heeft die al bepaalde idee&euml
                 </a>
                 <p class="wp-caption-text">{{ image.caption }}</p>
             </div>
+        {% endfor %}
     </ul>
 </div>
 <div class="clearer"></div>
