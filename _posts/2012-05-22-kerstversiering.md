@@ -32,7 +32,6 @@ De oplossing was uiteindelijk natuurlijk om het zelf te maken. Ik had dit jaar w
         {% endfor %}
     </ul>
 </div>
-<div class="clearer"></div>
 
 {% for image in page.images.row2 %}
 <div class="wp-caption alignleft">
