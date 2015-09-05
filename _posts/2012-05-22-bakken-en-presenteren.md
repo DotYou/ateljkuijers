@@ -32,7 +32,7 @@ Een van mijn grote hobby’s is het bakken van lekkere dingen voor mijn vrienden
 
 Om te beginnen hier iets wat ik voor een familieweekend had gemaakt. De zelfgemaakte etagierre- zie vorige update – met daarop 4 lagen chocolade lekkernijen. Bovenste laag zijn truffels, het enige wat uit een pakje kwam. Daaronder zelfgemaakte chocolade-mint fudge, die ik overigens tot 3 keer toe (!?) opnieuw heb moeten maken voor het gewenste resultaat was bereikt. De laag daaronder zijn brownies met chocolade icing; een classic. De onderste laag bestaat uit stukken chocolade carameltaart, een nieuw uitprobeersel. Wat we van deze onderneming geleerd hebben? Altijd MINSTENS 20 mensen uitnodigen als ik zoiets nog een keer maak, al die chocolade vult nogal!
 
-<div class="linebreaks 4"></div>
+<div style="height: 4em;"></div>
 
 Tot overmaat van ramp kreeg ik vervolgens voor Sinterklaas een chocoladekookboek van mijn zus. Toen was het hek natuurlijk van de dam. Twee van de mooiste taarten die ik daaruit geprobeerd heb te maken staan hieronder op de foto. Een Chocoladepassietaart en een Dobostaart. Een tip die ik een ieder kan geven die dit ook wil proberen is: neem de Chocoladepassietaart NIET mee naar je schoonouders! Toen we daar aankwamen en de taartdoos opendeden zag het eruit als een moddertaartje… niet zo reisbestendig dus. De Dobostaart daarentegen is een stuk beter bestand tegen een rite met de fiets, trein en bus. Alleen de vulling was wat gesmolten jammer genoeg. Beide taarten waren heerlijk, maar ook hierbij won de Dobostaart handsdown!
 
