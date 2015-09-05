@@ -90,10 +90,10 @@ In die periode heb ik enkele ontzettend mooie foto’s gemaakt … wat kan de lu
 
 {% for image in page.images.row3 %}
 <div class="wp-caption alignleft" style="width:125px">
-    <a title="{ image.name }}" href="{ image.url }}">
-        <img src="{{ image.url }}" alt="{ image.name }}" height="{ image.height }}">
+    <a title="{{ image.name }}" href="{{ image.url }}">
+        <img src="{{ image.url }}" alt="{{ image.name }}" height="{{ image.height }}">
     </a>
-    <p class="wp-caption-text">{ image.caption }}</p>
+    <p class="wp-caption-text">{{ image.caption }}</p>
 </div>
 {% endfor %}
 
