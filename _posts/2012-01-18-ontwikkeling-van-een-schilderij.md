@@ -86,7 +86,6 @@ In die periode heb ik enkele ontzettend mooie foto’s gemaakt … wat kan de lu
         {% endfor %}
     </ul>
 </div>
-<div class="clearer"></div>
 
 {% for image in page.images.row3 %}
 <div class="wp-caption alignleft" style="width:125px">
