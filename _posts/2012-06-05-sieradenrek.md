@@ -31,7 +31,7 @@ Ik begon dus te knutselen. Een plank bij de bouwmarkt (op de fiets mee naar huis
 
 <div class="imagerowcontainer">
     <ul class="imagerow">
-        {% for image in page.images.row2 %}
+        {% for image in page.images.row1 %}
             {% for component in site.components %} {% if component.name == "imagerow-caption" %}
                 {{ component.content | replace:'%%url%%',image.url | replace:'%%name%%',image.name | replace:'%%height%%',image.height | replace:'%%caption%%',image.caption }}
             {% endif %} {% endfor %}
