@@ -25,9 +25,7 @@ images:
 ---
 
 {% for image in page.images.row1 %}
-
 <div class="wp-caption alignleft"><a title="{{ image.name }}" href="{{ image.url }}"><img alt="{{ image.name }}" height="{{ image.height }}" src="{{ image.url }}" /> </a><p class="wp-caption-text">{{ image.caption }}</p></div>
-
 {% endfor %}
 
 Een van mijn grote hobby’s is het bakken van lekkere dingen voor mijn vrienden en familie. Vooral Amerikaanse recepten zijn om de een of andere reden populair; cinnamonrolls, bananabread, brownies, chocolatechip cookies. We hebben het allemaal al meerdere keren geprobeerd. Het leukste is natuurlijk wel als het baksel er dan ook nog mooi uitziet. Met onderstaande recepten was dat -al zeg ik het zelf – wel het geval.
