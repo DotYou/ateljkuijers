@@ -217,6 +217,9 @@ p img,
 	float: left;
 	border: 0px;
 }
+.wp-caption.alignleft {
+    margin-top: -7px;
+}
 .wp-caption.alignright {
     float: right;
 }
