@@ -34,7 +34,7 @@ Om te beginnen hier iets wat ik voor een familieweekend had gemaakt. De zelfgema
 
 Wat we van deze onderneming geleerd hebben? Altijd MINSTENS 20 mensen uitnodigen als ik zoiets nog een keer maak, al die chocolade vult nogal!
 
-<div style="height: 4em;"></div>
+<div style="height: 3em;"></div>
 
 Tot overmaat van ramp kreeg ik vervolgens voor Sinterklaas een chocoladekookboek van mijn zus. Toen was het hek natuurlijk van de dam. Twee van de mooiste taarten die ik daaruit geprobeerd heb te maken staan hieronder op de foto. Een Chocoladepassietaart en een Dobostaart. Een tip die ik een ieder kan geven die dit ook wil proberen is: neem de Chocoladepassietaart NIET mee naar je schoonouders! Toen we daar aankwamen en de taartdoos opendeden zag het eruit als een moddertaartje… niet zo reisbestendig dus. De Dobostaart daarentegen is een stuk beter bestand tegen een rite met de fiets, trein en bus. Alleen de vulling was wat gesmolten jammer genoeg. Beide taarten waren heerlijk, maar ook hierbij won de Dobostaart handsdown!
 
