@@ -30,7 +30,9 @@ images:
 
 Een van mijn grote hobby’s is het bakken van lekkere dingen voor mijn vrienden en familie. Vooral Amerikaanse recepten zijn om de een of andere reden populair; cinnamonrolls, bananabread, brownies, chocolatechip cookies. We hebben het allemaal al meerdere keren geprobeerd. Het leukste is natuurlijk wel als het baksel er dan ook nog mooi uitziet. Met onderstaande recepten was dat -al zeg ik het zelf – wel het geval.
 
-Om te beginnen hier iets wat ik voor een familieweekend had gemaakt. De zelfgemaakte etagierre- zie vorige update – met daarop 4 lagen chocolade lekkernijen. Bovenste laag zijn truffels, het enige wat uit een pakje kwam. Daaronder zelfgemaakte chocolade-mint fudge, die ik overigens tot 3 keer toe (!?) opnieuw heb moeten maken voor het gewenste resultaat was bereikt. De laag daaronder zijn brownies met chocolade icing; een classic. De onderste laag bestaat uit stukken chocolade carameltaart, een nieuw uitprobeersel. Wat we van deze onderneming geleerd hebben? Altijd MINSTENS 20 mensen uitnodigen als ik zoiets nog een keer maak, al die chocolade vult nogal!
+Om te beginnen hier iets wat ik voor een familieweekend had gemaakt. De zelfgemaakte etagierre- zie vorige update – met daarop 4 lagen chocolade lekkernijen. Bovenste laag zijn truffels, het enige wat uit een pakje kwam. Daaronder zelfgemaakte chocolade-mint fudge, die ik overigens tot 3 keer toe (!?) opnieuw heb moeten maken voor het gewenste resultaat was bereikt. De laag daaronder zijn brownies met chocolade icing; een classic. De onderste laag bestaat uit stukken chocolade carameltaart, een nieuw uitprobeersel. 
+
+Wat we van deze onderneming geleerd hebben? Altijd MINSTENS 20 mensen uitnodigen als ik zoiets nog een keer maak, al die chocolade vult nogal!
 
 <div style="height: 4em;"></div>
 
