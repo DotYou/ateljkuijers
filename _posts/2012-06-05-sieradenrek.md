@@ -39,9 +39,11 @@ Ik begon dus te knutselen. Een plank bij de bouwmarkt (op de fiets mee naar huis
     </ul>
 </div>
 
+
 {% for image in page.images.row2 %}
 <div class="wp-caption alignleft"><a title="{{ image.name }}" href="{{ image.url }}"><img alt="{{ image.name }}" height="{{ image.height }}" src="{{ image.url }}" /> </a><p class="wp-caption-text">{{ image.caption }}</p></div>
 {% endfor %}
+
 
 Uiteindelijk was de onderneming toch een stuk meer werk dan ik had verwacht. Toen de vorm eindelijk klaar was met alle bakjes, spijkers, draad en kartonnen uitsteeksels paraat, moesten er 2 lagen papier-maché overheen, toen twee lagen Gesso om de krantenlettertjes te bedekken. Daarna dacht ik dat ik bijna klaar was, maar het aanbrengen van de tekening en die inkleuren met verf heeft nog het meeste tijd gekost. Eerst alle kleur en toen uren en urenlang de zwarte lijnen aanbrengen die het lood moeten voorstellen. Niet voor herhaling vatbaar dus, tenzij ik me gruwelijk ga vervelen en 3 maanden verplicht vakantie heb ofzo. Geduld is niet mijn sterkste punt.
 
