@@ -16,7 +16,7 @@ images:
   row2:
     - name: "Close-up van de stoffen (1e) en met papier beplakte (2e) kerstballen"
       url: "http://lh3.ggpht.com/-8df7bUWQ0PM/T0ANfCCCP0I/AAAAAAAAAgM/-z40X7Z5CCo/s400/Foto1258.jpg"
-      height: 267
+      height: 418
       caption: "Close-up van de stoffen (1e) en met papier beplakte (2e) kerstballen"
 ---
 Dit jaar had ik met kerst echt zin in een gezellig versierd huis. Het is het eerste jaar we ons eigen huisje hebben en nu kan het dus ook. Wanneer je op kamers woont is het toch anders. Ik kon me dus echt uitleven dit jaar, we hadden nog bijna niets qua kerstdecoratie dus het kon nog alle kanten op! Ik had echter ook geen zin om veel geld uit te geven aan kerstballen en slingers etc.
@@ -34,7 +34,7 @@ De oplossing was uiteindelijk natuurlijk om het zelf te maken. Ik had dit jaar w
 </div>
 <div class="clearer"></div>
 
-{% for image in page.images.row1 %}
+{% for image in page.images.row2 %}
 <div class="wp-caption alignleft">
     <a title="{{ image.name }}" href="{{ image.url }}">
         <img src="{{ image.url }}" alt="{{ image.name }}" height="{{ image.height }}">
