@@ -43,3 +43,22 @@ layout: default
         </div>
     </article>
 </div>
+
+<script type="text/JavaScript">
+    $(document).ready(function() {
+	$("#homeGallery").picasa({
+		username: 'jolandakuijers',
+		mode: 'slideshow',
+		imgElSelector: '#slider',
+		thumbSize: '550c',
+		maxResults: 5,
+		album: 'AtelJKuijersHome',
+		parsePhotoComment: true,
+		slideshowUrl: "/gallery/#",
+		onSuccess: function() {
+			$('#slider').nivoSlider({
+				directionNav:false,effect:'fade',animSpeed:400,pauseTime:4000});
+			}
+		});
+	});
+</script>
