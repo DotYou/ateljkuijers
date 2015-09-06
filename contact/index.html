@@ -7,40 +7,37 @@ layout: page-sidebar
 <p>Als u contact met AtelJKuijers wilt opnemen kunt u het onderstaande formulier gebruiken. U kunt dit formulier gebruiken om te laten weten dat u interesse hebt om een schilderij te kopen, of een opdracht te plaatsen. Daarnaast kunt u hier terecht met vragen en opmerkingen.</p>
  
 <div id="FSContact1" style="width:80%;">
-<form action="http://www.ateljkuijers.nl/contact/#FSContact1" id="si_contact_form1" method="post">
-<div>
-<input type="hidden" name="si_contact_CID" value="1">
-</div>
-<div style="text-align:left; padding-top:5px;">
-<label for="si_contact_name1">Naam:<span class="required"> *</span></label>
-</div>
-<div style="text-align:left;">
-<input style="text-align:left; margin:0;" type="text" id="si_contact_name1" name="si_contact_name" value="" size="40">
-</div>
-<div style="text-align:left; padding-top:5px;">
-<label for="si_contact_email1">E-Mail adres:<span class="required"> *</span></label>
-</div>
-<div style="text-align:left;">
-<input style="text-align:left; margin:0;" type="email" id="si_contact_email1" name="si_contact_email" value="" size="40">
-</div>
-<div style="text-align:left; padding-top:5px;">
-<label for="si_contact_subject1">Onderwerp:<span class="required"> *</span></label>
-</div>
-<div style="text-align:left;">
-<input style="text-align:left; margin:0;" type="text" id="si_contact_subject1" name="si_contact_subject" value="" size="40">
-</div>
-<div style="text-align:left; padding-top:5px;">
-<label for="si_contact_message1">Bericht:<span class="required"> *</span></label>
-</div>
-<div style="text-align:left;">
-<textarea style="text-align:left; margin:0;" id="si_contact_message1" name="si_contact_message" cols="60" rows="10"></textarea>
-</div>
-<div style="text-align:left; padding-top:2px;">
-<input type="hidden" name="si_contact_action" value="send">
-<input type="hidden" name="si_contact_form_id" value="1">
-<input type="submit" id="fsc-submit-1" style="cursor:pointer; margin:0;" value="Versturen">
-</div>
-</form>
+    <form action="//formspree.io/your@email.com" method="POST">
+        <input type="hidden" name="_next" value="//ateljkuijers.nl" />
+        <input type="hidden" name="_subject" value="Website formulier" />
+        <input type="text" name="_gotcha" style="display:none" />
+        
+        <div style="text-align:left; padding-top:5px;">
+            <label for="name">Naam:<span class="required"> *</span></label>
+        </div>
+        <div style="text-align:left;">
+            <input style="text-align:left; margin:0;" type="text" id="name" name="name" value="" size="40">
+        </div>
+        
+        
+        <div style="text-align:left; padding-top:5px;">
+            <label for="replyto">Uw e-mailadres:<span class="required"> *</span></label>
+        </div>
+        <div style="text-align:left;">
+            <input style="text-align:left; margin:0;" type="email" id="replyto" name="_replyto" value="" size="40">
+        </div>
+        
+        
+        <div style="text-align:left; padding-top:5px;">
+            <label for="message">Bericht:<span class="required"> *</span></label>
+        </div>
+        <div style="text-align:left;">
+            <textarea style="text-align:left; margin:0;" id="message" name="message" cols="60" rows="10"></textarea>
+        </div>
+        <div style="text-align:left; padding-top:2px;">
+            <input type="submit" id="fsc-submit-1" style="cursor:pointer; margin:0;" value="Versturen">
+        </div>
+    </form>
 </div>
  
 </div> 
